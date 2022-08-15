@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>David Trstenjak | Expenses chart component</title>
+
+</head>
+<body>
+  <div class="container">
+    <div class="balance">
+      <div class="levo">
+      <p>My balance</p>
+      <h1>$921.48</h1>
+    </div>
+      <img src="images/logo.svg" alt="logo">
+    </div>
+
+    <div class="spending">
+      <h1 class="s">Spending - Last 7 days</h1>
+
+      <div>
+        <canvas id="chart"></canvas>
+    </div>
+    <hr>
+    <div class="dole">
+    <div class="doleLevo">
+      <h4 class="t">Total this month</h4>
+      <h1 class="s">$478.33</h1>
+    </div>
+      
+    <div class="doleDesno">
+      <h4 class="s">+2.4%</h4>
+      <h4 class="t">from last month</h4>
+    </div>
+      
+    </div>
+  </div>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

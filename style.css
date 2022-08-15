@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(27deg, 66%, 92%);
+  font-size: 18px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40rem;
+  height: 60vh;
+}
+.container .balance, .container .spending {
+  padding: 25px;
+  border-radius: 20px;
+}
+.container .balance {
+  background-color: hsl(10deg, 79%, 65%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: space-between;
+  width: 100%;
+  height: 20%;
+  align-items: center;
+  border-radius: 20px;
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+.container .balance .levo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: white;
+}
+.container .spending {
+  width: 100%;
+  height: 80%;
+  background-color: hsl(33deg, 100%, 98%);
+}
+.container .spending .dole {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: space-between;
+}
+.container .spending .dole .doleLevo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.container .spending .dole .doleLevo h1 {
+  font-size: 30pt;
+}
+.container .spending .dole .doleDesno {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.container .spending .dole .t {
+  font-weight: 400;
+  color: hsl(28deg, 10%, 53%);
+}
+.container .spending hr {
+  height: 1px;
+  background-color: hsl(33deg, 100%, 98%);
+}
+.container .s {
+  color: hsl(25deg, 47%, 15%);
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    width: 90%;
+  }
+  hr {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}/*# sourceMappingURL=style.css.map */
